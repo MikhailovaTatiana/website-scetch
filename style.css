@@ -32,6 +32,19 @@ a {
     color: white;
 }
 
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: darkred;
+    position: absolute;
+    font-size: 60px;
+    font-weight: 700;
+}
+
 img {
     width: 100%;
 }
