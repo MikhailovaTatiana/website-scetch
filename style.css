@@ -2,49 +2,73 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poiret One", sans-serif;
-    font-family: "Spirax", sans-serif;
+    
     text-decoration: none;
+    color: white;
 }
 
 body {
-    background-color: black;
+    background-color: darkred;
+    font-family: "Spirax", sans-serif;
     display: flex;
     justify-content: center;
 }
 
 .bg {
-    width: 80%;
+    width: 100%;
 }
 
 .navbar {
     background-color: rgba(31, 11, 11, 0.7);
     position: fixed;
-    width: 80%;
+    width: 100%;
     height: 3rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 15%;
+    padding: 0 25%;
 }
 
-a {
-    color: white;
-}
-
-main section {
+.main-section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-p {
-    color: darkred;
+.main-section article {
     position: absolute;
-    font-size: 60px;
+}
+
+.header {
+    text-align: center;
+}
+
+p {
+    background-color: darkred;
+}
+
+p.header {
+    color: darkred;
+    background-color: inherit;   
+    font-size: 4rem;
     font-weight: 700;
+}
+
+.another-font {
+    font-family: "Poiret One", sans-serif;
+}
+
+li {
+    background-color: black;
+    list-style-type: none;
 }
 
 img {
     width: 100%;
+    height: 100%;
+}
+
+#juicy {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
