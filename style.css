@@ -1,85 +1,87 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
 }
 
 body {
-    background-color: darkred;
-    font-family: "Spirax", sans-serif;
+  background-color: darkred;
+  font-family: "Spirax", sans-serif;
 }
 
-.navbar {
-    background-color: rgba(26, 14, 20, .7);
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 25%;
+nav {
+  background-color: rgba(26, 14, 20, 0.7);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+  padding: 0 25%;
+  font-size: 2rem;
 }
 
 .main-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .main-section article {
-    position: absolute;
-    top: 20%;
+  position: absolute;
+  top: 20%;
 }
 
 .header {
-    text-align: center;
+  text-align: center;
 }
 
 p {
-    background-color: rgba(128, 18, 21, .9);
+  background-color: rgba(128, 18, 21, 0.9);
 }
 
-p.header {
-    color: darkred;
-    background-color: inherit;   
-    font-size: 4rem;
-    font-weight: 700;
+.header {
+  color: darkred;
+  background-color: inherit;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 .another-font {
-    font-family: "Poiret One", sans-serif;    
+  font-family: "Poiret One", sans-serif;
 }
 
 .another-font p {
-    text-align: center;
+  text-align: center;
 }
 
 .another-font p,
 table {
-    margin: 1rem .5rem;
-    padding: .5rem 1rem;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
 }
 
 .another-font p:nth-of-type(1) {
-    margin-right: 5rem;
+  margin-right: 5rem;
 }
 
 .another-font p:nth-child(2) {
-    margin-left: 5rem;
+  margin-left: 5rem;
 }
 
 table {
-    background-color: rgba(16, 16, 16, .9);
-    margin: 0 3rem;
-    width: 80%;
+  background-color: rgba(16, 16, 16, 0.9);
+  margin: 0 3rem;
+  width: 80%;
 }
 
 .text-to-right {
-    text-align: end;
+  text-align: end;
 }
 
 img {
@@ -87,6 +89,38 @@ img {
 }
 
 #juicy {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    font-size: 1.5rem;
+    padding: 0 5%;
+  }
+
+  .header {
+    font-size: 3rem;
+  }
+
+  article {
+    margin: 0;
+    padding: 0;
+  }
+
+  .another-font p:nth-of-type(2) {
+    display: none;
+  }
+
+  img {
+    height: 100vh;
+    width: auto;
+  }
+
+  .another-font p,
+  table {
+    margin: 5%;
+    padding: 0.5rem 1rem;
+    width: 90%;
+    font-size: .9rem;
+  }  
 }
